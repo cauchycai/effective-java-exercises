@@ -4,81 +4,139 @@
 #+EMAIL:		cauchy.cai@gmail.com
 
 * Exercises List
-** Item 1
-** Item 2
-** Item 3
-** Item 4
-** Item 5
-** Item 6
-** Item 7
-** Item 8
-** Item 9
-** Item 10
-** Item 11
-** Item 12
-** Item 13
-** Item 14
-** Item 15
-** Item 16
-** Item 17
-** Item 18
-** Item 19
-** Item 20
-** Item 21
-** Item 22
-** Item 23
-** Item 24
-** Item 25
-** Item 26
-** Item 27
-** Item 28
-** Item 29
-** Item 30
-** Item 31
-** Item 32
-** Item 33
-** Item 34
-** Item 35
-** Item 36
-** Item 37
-** Item 38
-** Item 39
-** Item 40
-** Item 41
-** Item 42
-** Item 43
-** Item 44
-** Item 45
-** Item 46
-** Item 47
-** Item 48
-** Item 49
-** Item 50
-** Item 51
-** Item 52
-** Item 53
-** Item 54
-** Item 55
-** Item 56
-** Item 57
-** Item 58
-** Item 59
-** Item 60
-** Item 61
-** Item 62
-** Item 63
-** Item 64
-** Item 65
-** Item 66
-** Item 67
-** Item 68
-** Item 69
-** Item 70
-** Item 71
-** Item 72
-** Item 73
-** Item 74
-** Item 75
-** Item 76
-** Item 77
-** Item 78
+** Item 1: Consider static factory methods instead of constructors
+** Item 2: Consider a builder when faced with many constructor parameters
+** Item 3: Enforce the singleton property with a private constructor or an enum type
+** Item 4: Enforce noninstantiability with a private constructor
+** Item 5: Avoid treating unnecessary objects
+** Item 6: Eliminate obsolete object references
+** Item 7: Avoid finalizers
+** Item 8: Obey the general contract when overriding equals
+** Item 9: Always override hashCode when you override equals
+** Item 10: Always override toString
+** Item 11: Override clone judiciously
+** Item 12: Consider implementing Comparable
+** Item 13: Minimize the accessibility of classes and members
+** Item 14: In public classes, use accessor methods, not public fields
+** Item 15: Minimize mutability
+** Item 16: Favor composition over inheritance
+** Item 17: Design and document for inheritance or else prohibit it
+** Item 18: Prefer interfaces to abstract classes
+** Item 19: Use interfaces only to define types
+** Item 20: Prefer class hierarchies to tagged classes
+** Item 21: Use function objects to represent strategies
+** Item 22: Favor static member classes over nonstatic
+** Item 23: Don't use raw types in new code
+** Item 24: Eliminate unchecked warnings
+** Item 25: Prefer lists to arrays
+** Item 26: Favor generic types
+** Item 27: Favor generic methods
+** Item 28: Use bounded wildcards to increase API flexibility
+** Item 29: Consider typesafe heterogeneous containers
+** Item 30: Use enums instead of int constants
+** Item 31: Use instance fields instead of ordinals
+** Item 32: Use EnumSet instead of bit fields
+** Item 33: Use EnumMap instead of ordinal indexing
+** Item 34: Emulate extensible enums with  interfaces
+** Item 35: Prefer annotations to naming patterns
+** Item 36: Consistently use the Override annotation
+** Item 37: Use marker interfaces to define types
+** Item 38: Check parameters for validity
+*** TODO check parameters *using assertions* in nonpublic methods
+** Item 39: Make defensive copies when needed
+*** TODO Code Example of Showing "immutable" Period instance Being mutated
+*** TODO Code Example of Showing a Truely Immutable Period Implemented with Defensive Copies
+*** TODO Code Example of Showing a Truely Immutable Period Implemented by using the primitive long
+** Item 40: Design method signatures carefully
+*** TODO Code Example of Implementing Thermometer with a boolean parameter
+*** TODO Code Example of Implementing Thermometer with an enum type
+** Item 41: Use overloading judiciously
+*** TODO The Broken CellectionClassifier Example
+	Selection among overloaded methods is static (decided at compile time)
+*** TODO The Wine Example
+	Selection among overridden methods is dynamic (decided at runtime)
+*** TODO Fixing of "The Broken CellectionClassifier Example"
+*** TODO The Broken List.remove example and the Fix
+** Item 42: Use varargs judiciously
+*** TODO varargs example (eg. a sum method)
+	two cases: 0 or more arguments; 1 or more arguments.
+*** TODO The right way to print an array
+	Arrays.toString(myArray)
+** Item 43: Return emtpy arrays or collections, not nulls
+*** TODO (P202) The standard idiom for dumping items from a collection into a typed array
+** Item 44: Write doc comments for all exposed API elements
+*** TODO (P205) Write doc comments for a method and exported it to HTML with JavaDoc
+** Item 45: Minimize the scope of local variables
+*** TODO (P209) Testing the block scope
+*** TODO (P210) Write about the difference of variable scope between Java and PHP
+*** TODO (P210) Wrete about why "prefer for loops to while loops"
+** Item 46: Prefer for-each loops to traditional for loops
+*** TODO (P212) Try out for-each loop
+*** TODO (P213) Code Example of incorrect iterating of Faces
+*** TODO (P214) Implementing the Iterable interface and using it in a for-each loop
+*** TODO (P214) Why these 3 situations can't use a for-each loop
+	- filtering
+	- transforming
+	- parallel iteration
+** Item 47: Know and use the libraries
+*** TODO (P215) The flawed random number generator? Write about "why this approach is flawed"
+** Item 48: Avoid float and double if exact answers are required
+*** TODO (P218) Code sample that proves float calculations are not accurate
+*** TODO (P219) BigDecimal code sample
+** Item 49: Prefer primitive types to boxed primitives
+*** TODO (P221) The Broken Comparator
+*** TODO (P222) The Unbelievable Example
+	Getting a NullPointerException when a null object reference is auto-unboxed.
+*** TODO (P223) Test the performance cost of frequent auto-boxing and auto-unboxing
+** Item 50: Avoid strings where other types are more appropriate
+*** TODO (P225) The broken implementation of ThreadLocal using string
+*** TODO (P225) A simple implementation of ThreadLocal using *an unforgetful key*
+** Item 51: Beware the performance of string concatenation
+*** TODO (P227) Show the performance difference between using string concatenation and using StringBuilder
+** Item 52: Refer to objects by their interfaces
+** Item 53: Prefer interfaces to reflection
+*** TODO (P231) Create class instances of which the class is decided by a command argument
+** Item 54: Use native methods judiciously
+** Item 55: Optimize judiciously
+** Item 56: Adhere to generally accepted naming conventions
+** Item 57: Use exceptions only for exceptional conditions
+** Item 58: Use checked exceptions for recoverable conditions and runtime exceptions for programming errors
+*** TODO (P245) Catch a self-defined Exception and get information from a method of the exception
+** Item 59: Avoid unnecessary use of checked exceptions
+** Item 60: Favor the use of standard exceptions
+** Item 61: Throw exceptions appropriate to the abstraction
+*** TODO (P251) Exception Chaining
+** Item 62: Document all exceptions thrown by each method
+** Item 63: Include failure-capture information in detail messages
+*** TODO (P255) Detail failure information as exception constructor parameters
+** Item 64: Strive for failure atomicity
+** Item 65: Don't ignore exceptions
+** Item 66: Synchronize access to shared mutable data
+*** TODO (P260) The Broken StopThread Example and the Fix of it
+*** TODO (P262) Using volatile field in StopThread
+** Item 67: Avoid excessive synchronization
+*** TODO (P265) The broken ObservableSet example
+*** TODO (P267) Deadlock example: background thread try to unsubscribe an observer
+*** TODO (P268) Try out CopyOnWriteArrayList
+** Item 68: Prefer executors and tasks to threads
+*** TODO (P272) A Executors.newFixedThreadPool example
+*** TODO (P272) Examples for java.util.Timer and its replacement - ScheduledThreadPoolExecuter
+** Item 69: Prefer concurrency utilities to wait and notify
+*** TODO (P273) Implement String.intern with ConcurrentHashMap
+*** TODO (P275)  Simple framework for timing concurrent execution
+** Item 70: Document thread safety
+** Item 71: Use lazy initialization judiciously
+** Item 72: Don't depend on the thread scheduler
+*** TODO (P286) Awful CountDownLatch implementation
+** Item 73: Avoid thread groups
+** Item 74: Implement Serializable judiciously
+** Item 75: Consider using a custom serialized form
+*** TODO (P298) Implement serializable of StringList
+*** TODO (P301) Using serialver to generate a UID for the class to be serialized
+** Item 76: Write readObject methods defensively
+*** TODO (P303) Try out the BogusPeriod example
+** Item 77: For instance control, prefer enum types to readResolve
+*** TODO (P308) Test the readResolve method
+*** TODO (P310) The ElvisStealer example
+** Item 78: Consider serialization proxies instead of serialized instances
+*** TODO (P312) Serialization proxy for Period class
