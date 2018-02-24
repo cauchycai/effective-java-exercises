@@ -5,40 +5,76 @@
 
 * Exercises List
 ** Item 1: Consider static factory methods instead of constructors
+*** TODO (P8) A simple service provider framework
 ** Item 2: Consider a builder when faced with many constructor parameters
+*** TODO (P14) An example of the Builder Pattern
 ** Item 3: Enforce the singleton property with a private constructor or an enum type
+*** TODO (P18) Enum singleton
 ** Item 4: Enforce noninstantiability with a private constructor
 ** Item 5: Avoid treating unnecessary objects
+*** TODO (P21) Reusing Calendar in the isBabyMoomer method
 ** Item 6: Eliminate obsolete object references
 ** Item 7: Avoid finalizers
 ** Item 8: Obey the general contract when overriding equals
+*** TODO (P35) The broken CaseInsensitiveString
 ** Item 9: Always override hashCode when you override equals
+*** TODO (P46) Making a HashMap broken by not implementing hashCode method
 ** Item 10: Always override toString
+*** TODO (P53) Override toString
 ** Item 11: Override clone judiciously
+*** TODO (P59) Using deepCopy when implementing clone method
+*** TODO (P61) Using static factory method to do the work of a clone method
 ** Item 12: Consider implementing Comparable
+*** TODO (P65) Implement a compareTo method for the PhoneNumber class
 ** Item 13: Minimize the accessibility of classes and members
+*** TODO (P70) Implement a public static final array field and try to modify the array elements
 ** Item 14: In public classes, use accessor methods, not public fields
 ** Item 15: Minimize mutability
+*** TODO (P74) Implement the Complex immutable class (by making the class final)
+*** TODO (P78) Implement the Complex immutable class (by using static factories, and private constructor)
 ** Item 16: Favor composition over inheritance
+*** TODO (P81) InstrumentedHashSet implemented with inheritance
+*** TODO (P84) InstrumentedHashSet implemented with composition
 ** Item 17: Design and document for inheritance or else prohibit it
 ** Item 18: Prefer interfaces to abstract classes
+*** TODO (P95) A skeletal implementation example
 ** Item 19: Use interfaces only to define types
+*** TODO (P99) Implement a utility class and using it by static import
 ** Item 20: Prefer class hierarchies to tagged classes
 ** Item 21: Use function objects to represent strategies
+*** TODO (P104) Implement the StringLengthComparator
 ** Item 22: Favor static member classes over nonstatic
+*** TODO (P107) An example of static member class (see also Item 30)
 ** Item 23: Don't use raw types in new code
+*** TODO (P110) Raw collection vs. Parameterized collection
+*** TODO (P113) "Unbounded wildcard type" example
 ** Item 24: Eliminate unchecked warnings
+*** TODO (P117) Using of SuppressWarnings annotation
 ** Item 25: Prefer lists to arrays
+*** TODO (P119) Array vs List
+*** TODO (P120) Show that "it is illegal to create an array of a *generic type*, a *parameterized type*, or a *type parameter*"
+*** TODO (P121) Reduction with/without generics and with/without concurrency flaw
 ** Item 26: Favor generic types
+*** TODO (P125) The "won't compile" implementation of a generified Stack and its fixed implementation
 ** Item 27: Favor generic methods
+*** TODO (P129) raw types method vs. generic method
 ** Item 28: Use bounded wildcards to increase API flexibility
+*** TODO (P136) The prodecer-extends, consumer-super (PECS) example
 ** Item 29: Consider typesafe heterogeneous containers
+*** TODO (P142) The Favorites example
 ** Item 30: Use enums instead of int constants
+*** TODO (P149) The Planet example
+*** TODO (P153) The Operation example and its optimized implementation with the strategy enum pattern
 ** Item 31: Use instance fields instead of ordinals
+*** TODO (P158) The Ensemble example
 ** Item 32: Use EnumSet instead of bit fields
+*** TODO (P160) An example of EnumSet
 ** Item 33: Use EnumMap instead of ordinal indexing
+*** TODO (P162) The Phase example
 ** Item 34: Emulate extensible enums with  interfaces
+*** TODO (P166) An example for extending an Enum
 ** Item 35: Prefer annotations to naming patterns
+*** TODO (P172) Implement the simple testing framework
 ** Item 36: Consistently use the Override annotation
 ** Item 37: Use marker interfaces to define types
 ** Item 38: Check parameters for validity
